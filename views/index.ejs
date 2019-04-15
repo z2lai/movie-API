@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title><%= title %></title>
+  <title> Movie App </title>
   <% include head %>
 </head>
 
 <body>
     <% include header %>
-
+    
     <div class="wrapper">
-      <div class="row">
-        
+      <h1>Now Playing</h1>
+      <div class="movie-list">
+        <% movies.forEach(movie=>{ %>
+          <div class="movie-list__movie">
+            <a href="/movie/<%= movie.id %>"><img src="<%= imageBaseUrl + movie.poster_path %>"></a>
+          </div>
+        <% }) %>
       </div>
     </div>
 </body>

@@ -1,4 +1,5 @@
 body {
+  margin: 0;
   padding: 10px;
   font-family: 'Roboto', sans-serif;
   color: #333;
@@ -49,13 +50,34 @@ img {
 }
 
 .wrapper {
-  max-width: 1000px;
+  max-width: 1260px;
   margin: auto;
-  padding: 0 36px;
 }
 
-.row {
+.wrapper-medium {
+  max-width: 800px;
+}
+
+.movie-list {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+}
+
+.movie-list__movie {
+  padding-bottom: 10px;
+}
+
+.movie-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movie-container__title {
+  text-align: center;
+}
+
+.movie-container__overview {
+  text-align: center;
 }

@@ -1,18 +1,18 @@
 <header class="site-header">
     <nav class="primary-nav">
-        <a class="primary-nav__home-link">The New IMDB</a>
+        <a class="primary-nav__home-link" href="/">The New IMDB</a>
         <ul class="primary-nav__links">
             <li><a>Login</a></li>
             <li><a>Favorites</a></li>
         </ul>
     </nav>
-    <form class="site-header__search">
-        <select>
-            <option value="Friday" selected>Movie Title</option>
-            <option value="Saturday">Director</option>
+    <form action="/search" method="post" class="site-header__search">
+        <select name="category">
+            <option value="movie" selected>Movie Title</option>
+            <option value="person">Person</option>
         </select>
-        <input type="text" placeholder="Search">
-        <input type="submit" value="Submit">
+        <input type="text" placeholder="Search" name="movieSearch">
+        <input type="submit">
     </form>
     
 </header>

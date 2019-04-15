@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Movie App </title>
+    <% include head %>
+</head>
+
+<body>
+    <% include header %>
+    <div class="wrapper wrapper-medium">
+        <div class="movie-container">
+            <h1 class="movie-container__title"> <%= parsedBody.title %> </h1>
+            <h2 class="movie-container__tagline"> <%= parsedBody.tagline %> </h2>
+            <a href="<%= parsedBody.homepage %>"><img class="movie-container__poster" src="<%= imageBaseUrl + parsedBody.poster_path %>"></a>
+            <p class="movie-container__overview"><%= parsedBody.overview %></p>
+        </div>
+    </div>
+</body>
+    
+</html>
